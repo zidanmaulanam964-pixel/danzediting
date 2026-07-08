@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danz Editing</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b1020;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#3b82f6;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#111827,#1d4ed8);
+animation:bg 8s infinite alternate;
+}
+
+@keyframes bg{
+100%{
+filter:hue-rotate(20deg);
+}
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero span{
+color:#60a5fa;
+}
+
+.hero p{
+margin:20px auto;
+max-width:650px;
+line-height:1.8;
+}
+
+.button{
+display:inline-block;
+padding:15px 35px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:50px;
+margin-top:20px;
+transition:.3s;
+}
+
+.button:hover{
+transform:scale(1.08);
+box-shadow:0 0 25px #2563eb;
+}
+
+section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+font-size:35px;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#16213e;
+padding:25px;
+border-radius:18px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px #2563eb;
+}
+
+.porto{
+height:220px;
+background:linear-gradient(135deg,#2563eb,#111827);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:25px;
+border-radius:15px;
+font-weight:bold;
+}
+
+footer{
+background:#05070f;
+text-align:center;
+padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Danz Editing</div>
+
+<nav>
+<a href="#layanan">Layanan</a>
+<a href="#portfolio">Portofolio</a>
+<a href="#kontak">Kontak</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1><span>Danz</span> Editing</h1>
+
+<p>
+Jasa pembuatan Logo, Poster, Banner, Feed Instagram,
+Thumbnail YouTube dan berbagai desain profesional.
+</p>
+
+<a class="button"
+href="https://wa.me/6287881149987?text=Halo%20Danz%20Editing,%20saya%20ingin%20memesan%20jasa%20desain.">
+Pesan Sekarang
+</a>
+
+</div>
+
+</section>
+
+<section id="layanan">
+
+<h2 class="title">Layanan</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🎨 Logo Design</h3>
+<p>Logo bisnis, UMKM, esport, komunitas, clothing.</p>
+</div>
+
+<div class="card">
+<h3>🖼 Poster Design</h3>
+<p>Poster promosi, event, konser, produk, menu.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Editing Cepat</h3>
+<p>Pengerjaan cepat, kualitas HD, revisi sesuai kesepakatan.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2 class="title">Portofolio</h2>
+
+<div class="grid">
+
+<div class="porto">LOGO</div>
+<div class="porto">POSTER</div>
+<div class="porto">BANNER</div>
+
+</div>
+
+</section>
+
+<section id="kontak">
+
+<h2 class="title">Hubungi Kami</h2>
+
+<div class="card" style="text-align:center">
+
+<h3>Danz Editing</h3>
+
+<p>Siap menerima pesanan desain setiap hari.</p>
+
+<br>
+
+<a class="button"
+href="https://wa.me/6287881149987?text=Halo%20Danz%20Editing,%20saya%20ingin%20memesan%20jasa%20desain.">
+Chat WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Danz Editing
+
+</footer>
+
+</body>
+</html>
